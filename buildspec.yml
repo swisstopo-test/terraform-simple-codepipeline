@@ -12,6 +12,8 @@ phases:
   pre_build:
     commands:
       - make test
+      - echo ${RELEASE_BUCKET_NAME}
+      - echo ${ARTIFACT_NAME}
   build:
     commands:
       - make build
