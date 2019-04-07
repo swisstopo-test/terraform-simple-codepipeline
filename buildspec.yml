@@ -14,6 +14,7 @@ phases:
       - make test
       - echo ${RELEASE_BUCKET_NAME}
       - echo ${ARTIFACT_NAME}
+      - echo ${ARTIFACT_FILENAME}
   build:
     commands:
       - make build
