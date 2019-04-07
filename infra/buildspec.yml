@@ -1,0 +1,18 @@
+---
+version: 0.2
+
+env:
+  variables:
+    KEY: "value"
+
+phases:
+  install:
+    commands:
+      - echo "Doing nothing"
+      - echo ${RELEASE_BUCKET_NAME}
+      - echo ${ARTIFACT_NAME}
+      - echo ${ARTIFACT_FILENAME}
+
+artifacts:
+  files:
+    - $ARTIFACT_FILENAME
